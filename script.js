@@ -99,7 +99,6 @@ function setEventListener(skill, cover, text, val) {
     })
 }
 
-
 document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
     const name = document.getElementById("name").value.trim();
@@ -108,7 +107,7 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 
     if (name || email || message) {
         animateButton(true);
-        // sendMail();
+        sendMail();
     }
 });
 

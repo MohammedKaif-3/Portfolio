@@ -258,7 +258,7 @@ nav ul li a:hover~div {
 #education {
     scroll-margin-top: 50px;
     padding-bottom: 30px;
-    background-color: #FFFAF0     ;
+    background-color: #fafafa     ;
 }
 
 .timeline {
@@ -392,7 +392,6 @@ nav ul li a:hover~div {
 #skills {
     scroll-margin-top: 50px;
     padding-bottom: 30px;
-    background-color: #FAF9F6;
 }
 
 #skills-container {
@@ -408,7 +407,7 @@ nav ul li a:hover~div {
     flex-direction: column;
     width: 99%;
     height: fit-content;
-    margin: 10px;
+    margin-bottom: 50px;
     border-radius: 10px;
 }
 
@@ -431,7 +430,7 @@ nav ul li a:hover~div {
 .newSkill {
     width: auto;
     height: 155px;
-    border: 1px solid var(--primary-color);
+    border: 1.5px solid var(--primary-color);
     display: flex;
     padding: 0 10px;
     flex-direction: column;
@@ -440,7 +439,6 @@ nav ul li a:hover~div {
     justify-content: space-evenly;
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.50);
 }
 
 .newSkill h3 {
