@@ -55,14 +55,15 @@
     }
 
     .name {
-        font-size: 23px;
+        font-size: 20px;
         display: flex;
+        gap: 10px;
         justify-content: center;
     }
 
     .description {
         font-size: 12px;
-        text-align: center;
+        text-align: justify;
     }
 
     #img-border img {

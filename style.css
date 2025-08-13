@@ -70,7 +70,7 @@ nav a {
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: #fafafa83;
+    background-color: rgba(0, 0, 0, 0.521);
     backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
     color: black;
@@ -598,17 +598,16 @@ nav ul li a:hover~div {
     cursor: pointer;
     padding: 7px 30px;
     font-size: 15px;
-    color: rgb(90, 87, 87);
+    color: white;
     border-radius: 5px;
     text-wrap: nowrap;
     text-decoration: none;
-    background-color: #d1cfcf;
+    background-color: var(--navbar-color);
     border: none;
     align-self: center;
 }
 .button:hover{
-    color: black;
-    transform: scale(1.009);
+    transform: scale(1.010);
 }
 
 .project-details h3 {
