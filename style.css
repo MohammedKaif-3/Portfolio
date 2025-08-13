@@ -70,7 +70,8 @@ nav a {
     top: 0;
     right: 0;
     height: 100vh;
-    background-color: white;
+    background-color: #fafafa83;
+    backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
     color: black;
     width: 250px;
@@ -86,12 +87,14 @@ nav a {
     width: 100%;
     display: flex;
     left: 5%;
-    padding: 10px 5px;
+    padding: 5px;
+    margin: 10px 0;
 }
 
 #sidebar li a {
+    font-size: 15px;
     width: 100%;
-    color: black;
+    color: white;
 }
 
 nav ul li {
