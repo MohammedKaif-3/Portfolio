@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mohammed Kaif</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="animations.css" rel="stylesheet" type="text/css">
+    <link href="media_queries.css" rel="stylesheet" type="text/css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Image Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "SdCceOwU_r2vsLwzy",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#" id="logo">Portfolio.</a>
+            <ul id="sidebar">
+                <li onclick="hideSideBar()"><i class="fa-solid fa-xmark" style="color: black;"></i></li>
+                <li>
+                    <hr style="border-color: black;">
+                </li>
+                <li><a href="#" class="nav-link"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#education" class="nav-link"><i class="fa-solid fa-school"></i> Education</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fa-solid fa-user-gear"></i>Skills</a></li>
+                <li><a href="#projects" class="nav-link"></i><i class="fa-solid fa-list-check"></i>Projects</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fa-regular fa-id-badge"></i>Contact</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="#" id="a1" class="nav-link">Home</a>
+                    <div class="underline"></div>
+                </li>
+                <li><a href="#education" id="a2" class="nav-link">Education</a>
+                    <div class="underline"></div>
+                </li>
+                <li><a href="#skills" id="a3" class="nav-link">Skills</a>
+                    <div class="underline"></div>
+                </li>
+                <li><a href="#projects" id="a4" class="nav-link">Projects</a>
+                    <div class="underline"></div>
+                </li>
+                <li><a href="#contact" id="a5" class="nav-link">Contact</a>
+                    <div class="underline"></div>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars" id="hamburger" style="color: #ffffff;"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero-section">
+            <div id="hero-section-intro">
+                <div class="greeting" style="color: rgb(172, 170, 170);">HELLO WORLD</div>
+                <div class="name">I’m <span id="animate-name" data-text="Mohammed Kaif">Mohammed Kaif</span></div>
+                <div class="description">
+                    A Final-Year B.Tech Computer Science Engineering Student, Passionate about Coding, and Building
+                    Innovative Projects.
+                </div>
+                <a href="files/resume.pdf" download>Resume <i class="fa-solid fa-download"
+                        style="color: #acaaaa;"></i></a>
+
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/mohammedkaif003/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.github.com/MohammedKaif-3/" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/kaif_shaik_7_8_6/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div id="img-border"><img src="images/me.png"></div>
+            <div class="scroll-down"></div>
+        </section>
+
+        <section id="education">
+            <h1 class="heading">Education</h1>
+            <div class="timeline">
+                <div class="timeline-item left-container">
+                    <div class="logo"></div>
+                    <div class="timeline-content">
+                        <h2>Secondary School</h2>
+                        <i class="fa-regular fa-circle-check" style="color: #28b625;"></i>
+                        <small>2020</small>
+                        <p>Siddartha English Medium High School</p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="timeline-item right-container">
+                    <div class="logo"></div>
+                    <div class="timeline-content">
+                        <h2>High School</h2>
+                        <i class="fa-regular fa-circle-check" style="color: #28b625;"></i>
+                        <small>2020 - 2022</small>
+                        <p>St. Joseph's Junior College</p>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="timeline-item left-container">
+                    <div class="logo"></div>
+                    <div class="timeline-content">
+                        <h2>B.Tech in Computer Science</h2><span class="present">Present</span>
+                        <i class="fa-solid fa-clock" style="color: rgb(204, 99, 28);"></i>
+                        <small>2022 - 2026</small>
+                        <p>Kandula Obul Reddy Memorial College of Engineering</p>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1 class="heading">Skills</h1>
+            <div id="skills-languages">
+                <h2>Languages</h2>
+                <div class="skills-content">
+                    <div class="newSkill">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="images/html-5.png">
+                                <h3>80%</h3>
+                            </div>
+                        </div>
+                        <h3>HTML</h3>
+                        <div class="cover"></div>
+                    </div>
+                    <div class="newSkill">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="images/css-3.png">
+                                <h3>80%</h3>
+                            </div>
+                        </div>
+                        <h3>CSS</h3>
+                        <div class="cover"></div>
+                    </div>
+                    <div class="newSkill">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="images/js.png">
+                                <h3>80%</h3>
+                            </div>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="cover"></div>
+                    </div>
+                    <div class="newSkill">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="images/python.png">
+                                <h3>80%</h3>
+                            </div>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="cover"></div>
+                    </div>
+                    <div class="newSkill">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="images/java.png">
+                                <h3>80%</h3>
+                            </div>
+                        </div>
+                        <h3>Java</h3>
+                        <div class="cover"></div>
+                    </div>
+                    <div class="newSkill">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="images/letter-c.png">
+                                <h3>80%</h3>
+                            </div>
+                        </div>
+                        <h3>C</h3>
+                        <div class="cover"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="marquee-container">
+                <h2>Frameworks and Tools</h2>
+                <div class="marquee-content">
+                    <div class="marquee-item" data-tooltip="Android Studio">
+                        <img src="images/androidstudio.svg" alt="Android Studio">
+                    </div>
+                    <div class="marquee-item" data-tooltip="Git">
+                        <img src="images/git.svg" alt="Git">
+                    </div>
+                    <div class="marquee-item" data-tooltip="NodeJs">
+                        <img src="images/nodejs.svg" alt="NodeJs">
+                    </div>
+                    <div class="marquee-item" data-tooltip="ExpressJs">
+                        <img src="images/express.svg" alt="ExpressJs">
+                    </div>
+                    <div class="marquee-item" data-tooltip="ReactJs">
+                        <img src="images/react.svg" alt="ReactJs">
+                    </div>
+                    <div class="marquee-item" data-tooltip="MongoDB">
+                        <img src="images/mongodb.svg" alt="MongoDB">
+                    </div>
+                    <div class="marquee-item" data-tooltip="Postman">
+                        <img src="images/postman.svg" alt="Postman">
+                    </div>
+                    <div class="marquee-item" data-tooltip="Bootstrap">
+                        <img src="images/bootstrap.svg" alt="Bootstrap">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="projects">
+            <h2 class="heading">My Projects</h2>
+            <p class="sub-heading">Selected Projects</p>
+            <div id="projects-container">
+                <div class="project-card">
+                    <div class="slideshow-container">
+                        <img src="images/weather_1.jpeg" alt="Slide 1" class="slide">
+                        <img src="images/weather_2.jpeg" alt="Slide 2" class="slide">
+                        <img src="images/weather_3.jpeg" alt="Slide 2" class="slide">
+                        <img src="images/weather_4.jpeg" alt="Slide 2" class="slide">
+                        <img src="images/weather_5.jpeg" alt="Slide 2" class="slide">
+                        <img src="images/weather_6.jpeg" alt="Slide 2" class="slide">
+                        <img src="images/weather_7.jpeg" alt="Slide 2" class="slide">
+                    </div>
+                    <div class="project-details">
+                        <h3> <img src="images/weather_logo.png"> Weather App</h3>
+                        <p>A modern, lightweight, and responsive Android Weather App that delivers real-time weather
+                            updates through API integration.</p>
+                        <p class="tech-stack"><span>Features: </span>Daily Weather Notifications, Uses Location for
+                            precise Info, Dynamic themes, AQI insights, Forcasts.</p>
+                        <p class="tech-stack"><span>Tech-Used: </span>Andriod Studio, Java, OpenWeatherMap API, Volley
+                            Library, Firebase Cloud Messaging.</p>
+                        <h3
+                            style="margin: 10px 0; font-weight: 400;  width: 100%; display: flex; justify-content: space-evenly;">
+                            <a href="https://github.com/MohammedKaif-3/Weather/releases/download/v1.0.0/weather.apk"
+                                class="button">Download Apk</a>
+                            <a href="https://github.com/MohammedKaif-3/Weather/" target="_blank"
+                                class="button">Github</a>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="slideshow-container">
+                        <img src="images/musicplayer_1.jpeg" alt="Slide 1" class="slide2">
+                        <img src="images/musicplayer_2.jpeg" alt="Slide 1" class="slide2">
+                        <img src="images/musicplayer_3.jpeg" alt="Slide 1" class="slide2">
+                        <img src="images/musicplayer_4.jpeg" alt="Slide 1" class="slide2">
+                        <img src="images/musicplayer_5.jpeg" alt="Slide 1" class="slide2">
+                        <img src="images/musicplayer_6.jpeg" alt="Slide 1" class="slide2">
+                    </div>
+                    <div class="project-details">
+                        <h3> <img src="images/musicplayer_logo.png"> Music Player App</h3>
+                        <p>A modern, responsive, and beautiful music player for Android devices, designed for smooth
+                            performance and clean UI.</p>
+                        <p class="tech-stack"><span>Features: </span>Notification Service, Audio Focus, Favourites tab,
+                            Dynamic Colours and Responsive.</span></p>
+                        <p class="tech-stack"><span>Tech-Used: </span>Andriod Studio, Java, MediaPlayer, SQLite
+                            Database, Pallete
+                            API</span>.</p>
+                        <h3
+                            style="margin: 10px 0; font-weight: 400;  width: 100%; display: flex; justify-content: space-evenly;">
+                            <a href="https://github.com/MohammedKaif-3/Music-Player/releases/download/v1.0.0/Music-Player.apk"
+                                class="button">Download Apk</a>
+                            <a href="https://github.com/MohammedKaif-3/Music-Player/" target="_blank"
+                                class="button">Github</a>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="slideshow-container">
+                        <div class="video-container">
+                            <video id="myVideo" controls autoplay muted loop poster="">
+                                <source
+                                    src="https://raw.githubusercontent.com/MohammedKaif-3/Liver_Cirrhosis/main/Documentation/Demo.mp4"
+                                    type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                    </div>
+
+                    <div class="project-details">
+                        <h3> <img
+                                src="https://raw.githubusercontent.com/MohammedKaif-3/Liver_Cirrhosis/main/Flask/static/assets/favicon.png"
+                                alt="Favicon" /> Hepacheck - Liver Cirrhosis Predictor</h3>
+                        <p>HepaCheck is a lightweight, responsive AI-powered web application that predicts the risk of
+                            liver cirrhosis based on clinical parameters. Designed to assist healthcare professionals
+                            and researchers in early-stage detection.</p>
+                        <p class="tech-stack"><span>Features: </span>Predicts cirrhosis risk, Real-time prediction,
+                            Visualizes features, Fully responsive.</span></p>
+                        <p class="tech-stack"><span>Tech-Used: </span>HTML, CSS, Javascript, Flask, Scikit-learn,
+                            Chart.js</span>.</p>
+                        <h3
+                            style="margin: 10px 0; font-weight: 400;  width: 100%; display: flex; justify-content: space-evenly;">
+                            <a href="https://hepacheck.pythonanywhere.com/" target="_blank" class="button">Live Demo</a>
+                            <a href="https://github.com/MohammedKaif-3/Liver_Cirrhosis/" target="_blank"
+                                class="button">Github</a>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="slideshow-container">
+                        <div class="video-container">
+                            <video id="myVideo" controls autoplay muted loop poster="">
+                                <source
+                                    src="https://raw.githubusercontent.com/MohammedKaif-3/Liver_Cirrhosis/main/Documentation/Demo.mp4"
+                                    type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                    </div>
+
+                    <div class="project-details">
+                        <h3> <img src="https://ai-resume-builder-six-nu.vercel.app/logo.png" alt="Favicon" /> AI Resume
+                            Builder</h3>
+                        <p>A smart, modern, and responsive AI-powered Resume Builder that helps users create polished
+                            resumes using structured data extraction, customizable templates, and intelligent resume
+                            scoring.</p>
+                        <p class="tech-stack"><span>Features: </span>AI-Powered creation, Live Preview, 12+ resume templates, 24+ template themes, One click export, Save resumes, Smart Resume Scoring. </span></p>
+                        <p class="tech-stack"><span>Tech-Used: </span>React, Nodejs, MongoDB, Expressjs, Google Gemini, NLP(compare)</span>.</p>
+                        <h3
+                            style="margin: 10px 0; font-weight: 400;  width: 100%; display: flex; justify-content: space-evenly;">
+                            <a href="https://ai-resume-builder-six-nu.vercel.app/" target="_blank" class="button">Live Demo</a>
+                            <a href="https://github.com/MohammedKaif-3/AI-Resume-Builder/" target="_blank"
+                                class="button">Github</a>
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="heading">Contact Me</h2>
+            <p class="sub-heading">Let's Collaborate and Build</p>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit" id="submit-btn">
+                    <span id="btn-text">Send Message</span>
+                    <span id="btn-spinner" class="spinner" style="display: none;"></span>
+                </button>
+            </form>
+            <div id="toast"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Social Media Links -->
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/mohammedkaif003/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.github.com/MohammedKaif-3/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/kaif_shaik_7_8_6/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>© 2025 Mohammed Kaif | All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7cb97bdf64.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

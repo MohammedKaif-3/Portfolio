@@ -1,0 +1,148 @@
+@keyframes fill-text {
+
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    50% {
+        transform: scaleX(1.01);
+        transform-origin: left;
+        /* +1% width */
+    }
+
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+@keyframes floatImg {
+  0%{
+      border-radius: 45% 55% 45% 55%;
+      box-shadow: 3px 3px 5px rgb(240, 106, 240);
+  }
+  50%{
+      border-radius: 55% 45% 55% 45%;
+      box-shadow: -3px -3px 5px rgb(240, 106, 240);
+  }
+  100%{
+      border-radius: 45% 55% 45% 55%;
+      box-shadow: 3px 3px 5px rgb(240, 106, 240);
+  }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+@keyframes moveDot {
+    0% { transform: translateY(-10px); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(10px); opacity: 0; }
+}
+
+
+.marquee-content {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    background-color: rgb(243, 237, 237);
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 8px;
+    font-family: var(--font);
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+.marquee-item {
+    position: relative;
+    background-color: rgb(248, 243, 243);
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 8px;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    box-shadow:
+    4px 4px 6px -1px rgba(0, 0, 0, 0.2),   /* Soft outer shadow */
+    inset -4px -4px 6px -1px rgba(0, 0, 0, 0.7),  /* Deep inner shadow */
+    -0.5px -0.5px 0px rgb(0, 0, 0), 
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05), /* Bottom shadow */
+    0px -12px 10px -10px rgba(0, 0, 0, 0.05); /* **New Top shadow** */
+}
+
+.marquee-item img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+/* Apply animation to all items */
+.marquee-content .marquee-item {
+    animation: scrollLeft 20s alternate infinite;
+}
+
+/* Pause animation on hover for the whole container */
+.marquee-content:hover .marquee-item {
+    animation-play-state: paused; 
+}
+
+.marquee-container h2, #skills-languages h2{
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 17px;
+    margin:10px 0;
+    padding-left: 100px;
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(60vw);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
